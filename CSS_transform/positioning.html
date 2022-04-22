@@ -1,0 +1,110 @@
+<!DOCTYPE html><html lang="en"><head><style>
+
+	.container1, .container2{
+		border: 1em solid black;
+		padding: 20px;
+		margin: 20px;
+
+		background: grey;
+	}
+
+	.box, .box_{
+		border: 1em solid red;
+		height: 180em;
+		background: wheat;
+
+		margin: 20px;
+		padding: 20px;
+	}
+
+
+	.a{
+		border: 20px solid brown;
+		width: 600px;
+		height: 600px;
+		background: yellow;
+		vertical-align: text-top;
+
+		font-size: 19px;
+
+		display: inline-block;
+	}
+
+	.i1{
+		position: relative;
+		top: 20px;
+		left: 20px;
+	}
+
+	.i2{
+		position: fixed;
+		top: 20px;
+		left: 20px;
+	}
+
+	.i3{
+		position: sticky;
+		top: 20px;
+		left: 20px;
+	}
+
+	.i4{
+		position: absolute;
+		top: 700px;
+		left: 700px;
+	}
+
+	.i5{
+		position: absolute;
+	}
+
+	.i6{
+		/*position: initial;*/
+		position: inherit;
+		top: 700px;
+		left: 700px;
+	}
+
+</style></head><body>
+
+<div class="container1"><div class="box">
+		<div class="a">0</div>
+		<div class="a">0</div>
+		<div class="a i1">0</div>
+		<div class="a">0</div>
+	</div>
+
+	<div class="box">
+		<div class="a">1</div>
+		<div class="a">1</div>
+		<div class="a i2">1</div>
+		<div class="a">1</div>
+	</div>
+
+	<div class="box">
+		<div class="a">2</div>
+		<div class="a">2</div>
+		<div class="a i3">2</div>
+		<div class="a">2</div>
+	</div>
+
+	<div class="box">
+		<div class="a">3</div>
+		<div class="a">3</div>
+		<div class="a i4">3</div>
+		<div class="a">3</div>
+	</div></div>
+
+<div class="container2"><div class="box_">
+	<div class="a">4</div>
+	<div class="a">4</div>
+	<div class="a i5">4</div>
+	<div class="a">4</div></div>
+
+	<div class="box_">
+	<div class="a">5</div>
+	<div class="a">5</div>
+	<div class="a i6">5</div>
+	<div class="a">5</div></div></div>
+
+</body></html>
