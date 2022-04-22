@@ -1,0 +1,57 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>webpage!</title><style>
+
+	.p1::before{
+		content: "-> paragraph! ";
+		border: 12px dotted blue;
+		color: red;
+	}
+
+	.p2[data-foo]::before{
+		content: attr(data-foo) " world : ";
+
+		/*	
+		content: attr(data-foo string, "t") " : ";
+		content: attr(data-foo, "t") " : ";
+
+
+		it is wrong!
+		*/
+
+		color: pink;
+	}
+
+	[class=p3]::before{
+
+		content: attr(class);
+		background: pink;
+		font: 2em grey monospace;
+
+	}
+
+	[class=class]::before{
+		display: inline;
+		content: "to be pretty and infectious!";
+		font: 1em monospace;
+		color: blue;
+		transition: font-size 4s ease-in-out, background-color 4s ease-in-out;
+	}
+
+	[class=class]:hover::before{
+		font-size: 6em;
+		background-color: pink;
+	}
+
+</style></head><body>
+
+	<p class="p1">Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Hic nulla eligendi nemo blanditiis dignissimos fuga ipsa?</p>
+
+	<p data-foo="hello" class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente laboriosam libero, dolores quidem quis ut corrupti officiis facilis assumenda eaque earum rerum corporis facere architecto exercitationem! Quod iure debitis tempora porro cupiditate?</p>
+
+	<p class="p3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere nesciunt placeat temporibus fugit illum perferendis reiciendis aspernatur magnam dolores.</p>
+
+	<p class="class">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, velit. Facere, ullam commodi sunt perferendis totam fuga exercitationem pariatur. Nam dignissimos, recusandae a optio beatae eos dolore voluptatibus sequi sunt repudiandae, ipsum adipisci et.</p>
+
+</body></html>
+
+<!-- attr(attribute_name type, fallback) -->
+<!-- type: default value is "empty string" -->

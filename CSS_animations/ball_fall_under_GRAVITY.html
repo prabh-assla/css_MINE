@@ -1,0 +1,43 @@
+<!-- duration | easing-function | delay | iteration-count | direction | fill-mode | play-state | name -->
+
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>webpage!</title><style>
+
+	.ball, .floor{
+		position: relative;
+	}
+
+	.ball{
+		background-image: radial-gradient(circle at 10%, rgba(255, 255, 255, 1), rgba(253, 185, 185, 1), rgba(252, 143, 143, 1), rgba(253, 100, 100, 1), rgba(253, 53, 53, 1), rgba(253, 0, 0, 1), rgba(171, 9, 9, 1));
+		border-radius: 50%;
+		height: 90px; width: 90px;
+
+		animation: 1s ease-in-out 0s infinite alternate jump;
+		top: 200px;
+		left: 46%;
+	}
+
+	.floor{
+		top: 521px;
+		left: 43%;
+
+		background-color: rgba(13, 246, 28, 0.6);
+		border-radius: 20px;
+		height: 60px; width: 270px;
+		transform: perspective(100px) rotateX(60deg);
+	}
+
+	@keyframes jump{
+		from{
+			transform: translateY(-190px);
+		}
+		to{
+			transform: translateY(340px);
+		}
+	}
+
+</style></head><body>
+
+	<div class="ball"></div>
+	<div class="floor"></div>
+
+</body></html>

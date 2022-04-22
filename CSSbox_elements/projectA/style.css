@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Space+Mono&display=swap');
+
+.head, .foot{
+	background-color: #BDDBDE;
+	font-family: 'Annie Use Your Telescope', cursive;
+	font-size: 44px;
+	text-align: center;
+	color: #147A69;
+	font-weight: bold;
+}
+
+.head, .body, .foot{
+	border-color: #C46B00;
+	border-style: solid;
+	border-width: 10px;
+}
+
+.head, .body, .foot{
+	padding: 10px;
+}
+
+.head, .body, .foot{
+	margin: 10px;
+}
+
+.body{
+	background-color: #D6B0DB;
+	font-family: 'Space Mono', monospace;
+	font-size: 17px;
+	color: #B00A17;
+}
+
+.foot{
+	text-align: right;
+}
+
+.full{
+	background-color: #D8E192;
+}
+

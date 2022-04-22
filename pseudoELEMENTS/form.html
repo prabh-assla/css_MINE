@@ -1,0 +1,58 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>webpage!</title><style>
+
+	.option{
+		background-color: pink;
+		font: 2em monospace;
+	}
+
+</style></head><body>
+
+	<form action="backend.php">
+
+		<div class="option">
+			NAME : <input type="text" name="MyName">
+		</div>
+
+		<div class="option">
+			 DATE : <input type="date">
+		</div>
+
+		<div class="option">
+			SALARY : <input type="number" name="MySalary">
+		</div>
+
+		<div class="option">
+			Are you eligible? : <input type="checkbox" name="MyEligibility">
+		</div>
+
+		<div class="option">
+			Are you eligible? : <input type="checkbox" name="MyEligibility" checked>
+		</div>
+
+		<div class="option">
+			Gender : Male <input type="radio" name="MyEligibility"> Female <input type="radio" name="MyEligibility"> Prefer not to Say <input type="radio" name="MyEligibility">
+		</div>
+
+		<div class="option">
+			 <input type="reset" value="ResetNow">
+		</div>
+
+		<div class="option">
+			 <input type="submit" value="SubmitNow">
+		</div>
+
+		<div class="option">
+			 Write about yourself : <textarea name="myText" cols="50" rows="20"></textarea>
+		</div>
+
+		<div class="option">
+			<label for="flowers">flowers : </label>
+			<select name="MyGarden" id="flowers">
+				<option value="Tp">Tulip</option>
+				<option value="Re">Rose</option>
+				<option value="Ly" selected>Lily</option>
+			</select>
+
+	</form>
+
+</body></html>

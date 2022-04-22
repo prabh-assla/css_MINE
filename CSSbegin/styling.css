@@ -1,0 +1,65 @@
+.head, .foot{
+    background-color: rgb(219, 95, 95);
+    color: rgb(255, 255, 255);
+
+    border-style: double;
+    border-color: rgba(73, 39, 7, 0.685);
+    border-width: 10px;
+
+}
+
+.head{
+
+    font-size: 68px;
+}
+
+.one{
+    background-color: rgb(180, 137, 184);
+    color: rgb(32, 9, 23);
+
+}
+
+.two{
+    background-color: rgb(240, 214, 101);
+    color: rgb(88, 21, 0);
+
+}
+
+#head{
+
+    font-family: monospace;
+
+}
+
+.one, .two{
+
+    border-bottom-style: dotted;
+    border-bottom-color: rgb(128, 41, 15);
+    border-bottom-width: 30px;
+
+    border-left-style: dotted;
+    border-left-color: rgb(22, 65, 92);
+    border-left-width: 30px;
+
+    border-top-style: dotted;
+    border-top-color: rgb(6, 110, 53);
+    border-top-width: 30px;
+    
+    border-right-style: dotted;
+    border-right-color: rgba(97, 7, 42, 0.664);
+    border-right-width: 30px;
+
+    font-size: 17px;
+}
+
+#gif {
+    display: block;
+
+    border-width: 10px;
+    border-color: rgb(69, 247, 217);
+
+    width: 400px;
+    height: 300px;
+    margin-left: 450px;
+
+}

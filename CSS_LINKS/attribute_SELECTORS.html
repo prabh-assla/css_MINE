@@ -1,0 +1,76 @@
+<!DOCTYPE html><html lang="en">
+
+<head><style>
+	/*for all hrefs*/
+	a[href]{
+		text-decoration: none;
+		font-family: monospace;
+		font-size: 3em;
+		display: block;
+		color: grey;
+	}
+
+	/*for hrefs with "ww" starting*/
+	a[href^="ww"]{
+		background-color: cyan;
+	}
+
+	/*for hrefs with "f" ending*/
+	a[href$="f"]{
+		background-color: greenyellow;
+	}
+
+	/*for hrefs with "ww" starting & "f" ending*/
+	a[href^="ertfg."][href$=".orrg"]{
+		background-color: yellow;
+	}
+
+	/*for hrefs with "TrTrTr" anywhere CONSIDERING exact capitalization*/
+	a[href*="TrTrTr" s]{
+		text-decoration: line-through;
+	}
+	a[href*="TrTRTr" s]{
+		color: lavender;
+	}
+
+	/*for hrefs with "Kike" as exact CAPITALIZATION; thus same as above*/
+	a[href*="Kike"]{
+		background-color: wheat;
+		color: black;
+	}
+
+	/*for hrefs with "Kike" with no any issue of CAPITALIZATION*/
+	a[href*="Kike" i]{
+		text-decoration: line-through;
+		color: lime;
+	}
+
+/*	
+
+others ->
+1.)	div[lang~="en-us"] : div lang="en-us en-gb en-au en-nz"
+
+2.)	div:not([lang]) : All divs without a `lang` attribute ---> 
+
+	div data-lang="zh-TW"
+	div lang="en-us en-gb en-au en-nz"
+
+3.) lang|="zh" : All divs in Chinese are red, whether simplified (zh-CN) or traditional (zh-TW) --->
+
+	div lang="zh-TW"
+	div lang="zh-CN"
+
+*/
+
+</style></head>
+
+<body>
+
+	<a href="www.pionS.rk">link1</a>
+	<a href="hhh.pipes.rf">link2</a>	
+	<a href="ertfg.jjj//lio.orrg">link3</a>	
+	<a href="gihj.KiKe.lions">link4</a>	
+	<a href="gihj.kike.lions">link5</a>	
+	<a href="gihj.TrTrTr.kion.org">link6</a>
+
+</body></html>

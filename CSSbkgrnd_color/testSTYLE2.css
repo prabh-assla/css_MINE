@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Bangers&display=swap');
+
+.heading{
+    
+    font-size: 40px;
+    font-family: monospace;
+
+    color: rgb(255, 224, 139);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#info1{
+    
+    font-size: 18px;
+    font-family: 'Cascadia Code', monospace;
+
+    color: rgb(255, 213, 213);
+
+    background-image: url("https://images.unsplash.com/photo-1519802772250-a52a9af0eacb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80");
+    background-repeat: repeat;
+    background-size: 780px 666px;
+    opacity: 1;
+    
+}
+
+#pic1{
+    
+    display: block;
+    margin: 0 auto;
+
+    width: auto;
+    height: auto;
+    
+    border-radius: 0% 30% 0% 30%;
+    border-width: 10px;
+    border-color: rgb(5, 139, 163);
+    border-style: double;
+    
+}
+
+#info2{
+    
+    font-size: 30px;
+    font-family: Bangers, cursive, monospace;
+    color: brown;
+
+    background-image: radial-gradient(rgba(55, 153, 233, 0.562), rgba(218, 57, 205, 0.664), rgba(221, 142, 52, 0.582), rgba(253, 83, 4, 0.644));
+
+}
+
+#l{
+    font-size: 50px;
+    text-shadow: 5px 5px 5px rgb(255, 0, 0);
+    text-align: left;
+}
+
+#c{
+    font-size: 50px;
+    text-shadow: 5px 5px 5px rgb(255, 0, 0);
+    text-align: center;
+}
+
+#r{
+    font-size: 50px;
+    text-shadow: 5px 5px 5px rgb(255, 0, 0);
+    text-align: right;
+}
+
+
+#info3{
+    
+    font-family: 'Architects Daughter', cursive, monospace;
+
+    color: rgb(19, 80, 121);
+
+    background-image: url("https://c.tenor.com/TpX0K2yAXXUAAAAi/color-mix.gif");
+
+    /* here "space" won't work; it creates a static image! */
+
+    background-repeat: round;
+    background-size: contain;
+
+    border-width: 10px;
+    border-color: rgba(119, 35, 216, 0.87);
+    border-style: solid;
+    
+}

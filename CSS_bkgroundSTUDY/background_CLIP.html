@@ -1,0 +1,79 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>webpage!</title><style>
+
+/*	https://unsplash.it/g/width/height/?blur	*/
+
+/* clip => affects color && origin => affects image */
+
+	.cont1, .cont2, .cont3, .cont4, .cont5, .cont6, .cont7{
+		font: 5em Dyuthi;
+		color: floralwhite;
+
+		display: inline-block;
+		margin: 20px;
+		padding: 20px;
+
+		border: 34px dotted rgba(245, 40, 145, 0.5);
+
+	}
+
+	.cont1{
+		background: url("https://i.pinimg.com/originals/98/01/84/980184fe0897895825bb2e751d8007f7.gif") no-repeat rgba(67, 227, 64);
+		background-clip: text;
+		width: 400px;
+		height: 300px;
+		color: transparent;
+	}
+
+	.cont2{
+		background: url(https://animated-gif-creator.com/images/03/small-and-tiny-heart-pattern-gif-images-best-animations_1.gif) no-repeat rgba(67, 227, 64);
+		background-clip: padding-box;
+		width: 500px;
+		height: 281px;
+	}
+	.cont5{
+		background: url(https://animated-gif-creator.com/images/03/small-and-tiny-heart-pattern-gif-images-best-animations_1.gif) no-repeat rgba(67, 227, 64);
+		background-origin: padding-box;
+		width: 500px;
+		height: 281px;
+	}
+
+	.cont3{		
+		background: url("https://wallpapercave.com/wp/wp3684391.gif") no-repeat rgba(67, 227, 64);
+		background-clip: border-box;
+		width: 1024px;
+		height: 768px;
+	}
+	.cont6{		
+		background: url("https://wallpapercave.com/wp/wp3684391.gif") no-repeat rgba(67, 227, 64);
+		background-origin: border-box;
+		width: 1024px;
+		height: 768px;
+	}
+
+	.cont4{
+		background: url("https://www.meetcortex.com/hs-fs/hubfs/giphy%20(1)-12.gif?width=600&name=giphy%20(1)-12.gif")no-repeat rgba(67, 227, 64);
+		background-clip: content-box;
+		width: 600px;
+		height: 600px;
+	}
+	.cont7{
+		background: url("https://www.meetcortex.com/hs-fs/hubfs/giphy%20(1)-12.gif?width=600&name=giphy%20(1)-12.gif")no-repeat rgba(67, 227, 64);
+		background-origin: content-box;
+		width: 600px;
+		height: 600px;
+	}
+
+</style></head><body>
+
+	<div class="cont1">Lorem ipsum dolor.</div>
+
+	<div class="cont2">Lorem ipsum dolor.</div>
+	<div class="cont5">Lorem ipsum dolor.</div>
+
+	<div class="cont3">Lorem ipsum dolor.</div>
+	<div class="cont6">Lorem ipsum dolor.</div>
+
+	<div class="cont4">Lorem ipsum dolor.</div>
+	<div class="cont7">Lorem ipsum dolor.</div>
+
+</body></html>

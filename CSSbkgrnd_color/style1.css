@@ -1,0 +1,48 @@
+#gen{
+
+    font-size: 1.25em;
+    font-family: 'Cascadia Code', monospace;
+    font-weight: 900;
+    
+}
+
+.prop{
+    height : 130px;
+}
+
+.props{
+    font-variant: small-caps;
+    font-family: 'Cascadia Code';
+    
+    /* Cascadia Code doesn't get applied! */
+}
+
+#col1{
+    background-color: red;
+    color: cyan;
+}
+
+#col2{
+    background-color: green;
+    color: magenta;
+}
+
+#col3{
+    background-color: blue;
+    color: yellow;
+}
+
+#col4{
+    color: red;
+    background-color: cyan;
+}
+
+#col5{
+    color: green;
+    background-color: magenta;
+}
+
+#col6{
+    color: blue;
+    background-color: yellow;
+}

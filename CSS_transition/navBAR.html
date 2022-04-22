@@ -1,0 +1,42 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>webpage!</title><style>
+
+	li{
+		border: 1px solid blue;
+		list-style-type: none;
+		width: 180px; height: 20px;
+		font: bolder 1.5em monospace;
+		background-color: lightskyblue;
+		margin: 2px; padding: 8px;
+	}
+
+	ul.second{
+		background-color: linen;
+		position: relative;
+		top: -34px;
+		left: 34px;
+		z-index: 1;
+		width: 2px; height: 2px;
+		transform-origin: 0% 0%;
+		transform: scaleY(0.007);
+
+		transition: transform 2s;
+
+	}
+
+	ul.second:hover{
+		transform: scaleY(1);
+	}
+
+</style></head><body>
+
+<ul class="first"><li class="main">fruits:</li></ul>
+<ul class="second">
+	<li>apple</li>
+	<li>mango</li>
+	<li>cherry</li>
+	<li>grapes</li>
+	<li>kiwi</li>
+	<li>melon</li>
+</ul>
+
+</body></html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>webpage!</title><style>
+
+.box{
+	border: 0.1em solid red; 
+	background-color: lightpink; 
+	width: 180px;
+}
+
+.cont1, .cont2, .cont3{
+	font: 1.5em ubuntu; 
+}
+
+.cont1{
+	color: brown;
+}
+
+.cont2{
+	color: blue;
+}
+
+.cont3{
+	color: purple;
+}
+
+.cont1, .cont2, .cont3{
+
+	overflow-wrap: anywhere;
+	overflow-wrap: break-word; /*------ same AS "anywhere!"*/
+	overflow-wrap: normal;
+
+
+	hyphens: none;
+	hyphens: auto; /*same to manual*/
+	hyphens: manual;
+
+	hyphenate-character: ";?78:";
+}
+
+.shy{
+	color: cyan;
+	background-color: black;
+}
+
+
+</style></head><body>
+
+	<p class="box cont1">LongingnessnessToSeeHERbeloved<span class="shy">&shy;</span>husband! made Michelle tearedupInfront<span class="shy">&shy;</span>ofsomanyPEOPLE;still<span class="shy">&shy;</span>displayingsmile...</p>
+
+	<p class="box cont2">LongingnessnessToSeeHERbeloved<span class="shy">&hyphen;</span>husband! made Michelle tearedupInfront<span class="shy">&hyphen;</span>ofsomanyPEOPLE;still<span class="shy">&hyphen;</span>displayingsmile...</p>
+
+	<p class="box cont3">LongingnessnessToSeeHERbeloved<wbr>husband! made Michelle tearedupInfront<wbr>ofsomanyPEOPLE;still<wbr>displayingsmile...</p> 
+
+</body></html>
+
+<!-- 
+hyphens: none & overflow: any/break > same result(hyp&wbr)
+hyphens: none & overflow: normal > same result(hyp&wbr)
+
+hyphens: auto/manual & overflow: any/break > same result(NO)
+hyphens: auto/manual & overflow: normal > same result(ALL) 
+-->

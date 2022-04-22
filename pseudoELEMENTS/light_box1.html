@@ -1,0 +1,81 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>webpage!</title><style>
+
+	legend{
+		font: bolder 2em monospace;
+		color: darkgray;
+	}
+
+	fieldset{
+		border: 1em solid darkgray;
+	}
+
+	input, label{
+		font: bolder 1em monospace;
+		color: darkgray;
+	}
+
+	form{
+		position: fixed;
+		left: 40%;
+		top: 40%;
+	}
+
+	.signup{
+		position: fixed;
+		background-color: rgba(246, 147, 155, 0.5);
+		width: 100vw;
+		height: 100vh;
+		left: -1px;
+		top: -1px;
+	}
+
+	.exit{
+		color: orange;
+		position: fixed;
+		font-size: 2em;
+		left: 60vw;
+		top: 40vh;
+		border-radius: 50%;
+		background-color: rgba(246, 147, 155, 0.5);
+		width: 40px; height: 40px;
+	}
+
+	#exit{
+		display: block;
+		position: relative;
+		text-decoration: none;
+		left: 8px;
+	}
+/*
+	#personalia{
+		display: none;
+	}
+
+	div:target{
+		display: block;
+	}*/
+
+</style></head><body>
+
+	<a id="link" href="#personalia">enter details...</a>
+
+<div id="personalia">
+	<div class="signup">
+		<form><fieldset>
+
+			<legend>personalia</legend>
+
+			<label>name -><input type="text"></label><br>
+			<label>phn no -><input type="number"></label><br>
+			<label>dob -><input type="date"></label><br>
+			<label>gender -><br><input type="radio" name="radio_button">male<input type="radio" name="radio_button">female<br><input type="radio" name="radio_button">prefer not to say!</label><br>
+			<label>department to apply<br><input type="checkbox" name="check_button">CSC(4 yrs)<br><input type="checkbox" name="check_button">CSC(5 yrs)</label><br>
+		</fieldset></form>
+	</div>
+
+	<div class="exit">
+		<a href="#">✖</a>
+	</div>
+</div>
+
+</body></html>

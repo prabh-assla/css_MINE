@@ -1,0 +1,70 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>webpage!</title><style>
+
+	.sunlight{
+
+		width: 100vw;
+		height: 100vh;
+
+		animation: sunlight 2s ease-in-out infinite both;
+
+	}
+
+	.sun{
+		width: 30vh;
+		height: 30vh;
+		border-radius: 50%;
+		position: absolute;
+
+		right: 4.5vh;
+		top: 13vh;
+
+		animation: sun 2s ease-in-out infinite both;
+	}
+
+	@keyframes sunlight{
+		from{
+		background-image: repeating-conic-gradient(at 90% 30%, rgba(255, 208, 0, 1) 0deg 26deg, rgba(252, 104, 35, 1) 26deg 36deg, rgba(240, 77, 1, 1) 36deg 45deg, rgba(253, 149, 0, 1) 45deg 60deg);	
+		}
+
+		25%{
+		background-image: repeating-conic-gradient(at 90% 30%, rgba(252, 104, 35, 1) 0deg 26deg, rgba(240, 77, 1, 1) 26deg 36deg, rgba(253, 149, 0, 1) 36deg 45deg, rgba(255, 208, 0, 1) 45deg 60deg);
+		}
+
+		50%{
+		background-image: repeating-conic-gradient(at 90% 30%, rgba(240, 77, 1, 1) 0deg 26deg, rgba(253, 149, 0, 1) 26deg 36deg, rgba(255, 208, 0, 1) 36deg 45deg, rgba(252, 104, 35, 1) 45deg 60deg);
+		}
+
+		to{
+		background-image: repeating-conic-gradient(at 90% 30%, rgba(253, 149, 0, 1) 0deg 26deg, rgba(255, 208, 0, 1) 26deg 36deg, rgba(252, 104, 35, 1) 36deg 45deg, rgba(240, 77, 1, 1) 45deg 60deg);
+		}
+	}
+
+
+	@keyframes sun{
+		from{
+		background-image: repeating-radial-gradient(rgba(255, 208, 0, 1) 0px 26px, rgba(252, 104, 35, 1) 26px 36px, rgba(240, 77, 1, 1) 36px 45px, rgba(253, 149, 0, 1) 45px 60px);
+		border: 13px solid indianred;
+		}
+
+		25%{
+		background-image: repeating-radial-gradient(rgba(252, 104, 35, 1) 0px 26px, rgba(240, 77, 1, 1) 26px 36px, rgba(253, 149, 0, 1) 36px 45px, rgba(255, 208, 0, 1) 45px 60px);
+		border: 13px solid darkgoldenrod;
+		}
+
+		50%{
+		background-image: repeating-radial-gradient(rgba(240, 77, 1, 1) 0px 26px, rgba(253, 149, 0, 1) 26px 36px, rgba(255, 208, 0, 1) 36px 45px, rgba(252, 104, 35, 1) 45px 60px);
+		border: 13px solid indianred;
+		}
+
+		to{
+		background-image: repeating-radial-gradient(rgba(253, 149, 0, 1) 0px 26px, rgba(255, 208, 0, 1) 26px 36px, rgba(252, 104, 35, 1) 36px 45px, rgba(240, 77, 1, 1) 45px 60px);
+		border: 13px solid darkgoldenrod;
+		}
+	}
+
+</style></head><body>
+
+	<div class="sunlight"></div>
+	<div class="sun"></div>
+
+</body></html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html><html lang="en"><head><style>
+
+/* 
+
+EMMET : Ctrl+Space(shows LIST which if scrolled gives all EMMET shortcuts)/Tab 
+
+a;
+a{LINK_TEXT_THAT_USER_SEES_ON_WEBPAGE};
+a#id;
+a.class;
+
+html:5;
+
+img.class>a#id{LINK_TEXT_THAT_USER_SEES_ON_WEBPAGE};
+
++:SIBLINGS;
+*:MULTIPLES;
+$:NUMBERING;
+^:CLIMB UP;
+():GROUPING;
+{}:ADDING TEXT;
+
+m10-20;
+---------------------------------- not necessarily right!
+*/
+
+	.box{
+		display: inline-block;
+
+		color: red;
+		font: 6em monospace;
+		margin: 2px;
+		border: 2px solid black;
+
+		width: 400px;
+		height: 400px;
+	}
+
+	.a{
+		background-image: linear-gradient(yellow, black);
+	}
+	.b{
+		background-image: linear-gradient(black 90%, yellow);
+	}
+	.c{
+		background-image: linear-gradient(black 90%, yellow 10%);
+	}
+	.d{
+		background-image: linear-gradient(black, 90%, yellow);
+	}
+	.e{
+		background-image: linear-gradient(black, 90%, yellow, 10%);
+	}
+
+	.f{
+		background-image: linear-gradient(-90deg, yellow, black);
+	}
+
+	/*
+	90/360 = .25
+	180/360 = .5
+	45/360 = .125
+	*/
+
+	.g{
+		background-image: linear-gradient(.25turn, yellow, black);
+	}
+	.h{
+		background-image: linear-gradient(.5turn, yellow, black);
+	}
+	.i{		
+		background-image:
+		linear-gradient(-.125turn, rgba(255, 255, 0, 0) 50%, rgba(255, 255, 0, 1)),
+		linear-gradient(.125turn, rgba(0, 0, 255, 0) 40%, rgba(0, 0, 255, 1)),
+
+		linear-gradient(-.125turn, rgba(0, 255, 0, 1), rgba(0, 255, 0, 0) 55%),
+		linear-gradient(.125turn, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0) 68%)
+
+		; 
+	}
+	.j{
+		background-image:
+		linear-gradient(-.125turn, rgba(255, 255, 0, 0) 50%, rgba(255, 255, 0, 1)),
+		linear-gradient(.125turn, rgba(0, 0, 255, 0) 50%, rgba(0, 0, 255, 1)),
+
+		linear-gradient(-.125turn, rgba(0, 255, 0, 1), rgba(0, 255, 0, 0) 50%),
+		linear-gradient(.125turn, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0) 50%)
+		; 
+	}
+
+	.k{
+/* 
+
+angle, top[increasing value INDICATES increased expansion] , bottom[increasing value INDICATES increased expansion] ----------------------->
+first rotate respectively w.r.t vertical depending on -ve/+ve(clockwise) sign; then rotate whole plane 360 degrees so UP becomes DOWN && DOWN becomes UP
+
+*/
+
+		background-image:
+		/*linear-gradient(-.125turn, rgba(255, 255, 0, 0) 70%, rgba(255, 255, 0, 1));*/
+		/*linear-gradient(.125turn, rgba(0, 0, 255, 0) ,rgba(0, 0, 255, 1) 70%);*/
+
+		/*linear-gradient(-.375turn, black, yellow);*/
+		linear-gradient(.375turn, yellow, black);	
+
+	}
+
+</style></head><body>
+
+	<div class="box a">a</div>
+	<div class="box b">b</div>
+	<div class="box c">b</div>
+	<div class="box d">c</div>
+	<div class="box e">c</div>
+
+	<div class="box f">d</div>
+	<div class="box g">e</div>
+	<div class="box h">e</div>
+	<div class="box i">f</div>
+	<div class="box j">f</div>
+
+	<div class="box k">g</div>
+</body></html>

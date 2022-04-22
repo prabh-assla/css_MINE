@@ -1,0 +1,50 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>webpage!</title><style>
+
+	
+.ball{
+  width: 50px;
+  height: 50px;
+  
+  border-radius: 50%;
+  
+  background: repeating-linear-gradient(red 0px 2px, green 2px 4px, blue 4px 6px, yellow 6px 8px) ;
+  border: 2px dotted yellow;
+  
+  animation: motion 9s ease-in-out 0s alternate infinite, turn 9s linear 9s alternate infinite; 
+}
+
+.line{
+  width: 780px;
+  height: 10px;
+
+  border-radius: 5px;
+
+  position: relative;
+  left: 28px;
+
+  background: lime;
+}
+
+
+@keyframes motion{
+
+  100%{
+    transform: translateX(780px);
+  }
+
+}
+
+@keyframes turn{
+  
+  100%{
+    transform: rotateZ(180deg);
+  }
+
+}
+
+</style></head><body>
+
+	<div class="ball"></div>
+  <div class="line"></div>
+
+</body></html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>webpage!</title><style>
+
+	*{
+		margin: 0px; padding: 0px;
+	}
+
+	.layer{
+		height: 60vh;
+		width: 11vw;
+		display: inline-block;
+		margin: 0px; padding: 0px;
+		position: relative;
+	}
+
+	.pallete{
+		height: 60vh;
+		margin: 0px; padding: 0px;
+
+		position: absolute;
+
+		top: 300px;
+		margin-left: 1px;
+
+		border-top: 4px solid darkblue;
+		border-bottom: 4px solid darkblue;
+
+	}
+
+	.c1{
+		animation: top 0.3s ease-in-out infinite both;
+	}
+
+	.c2{
+		animation: bottom 0.3s ease-in-out infinite both;
+	}
+
+	@keyframes top{
+		from{
+		background-image: repeating-radial-gradient(circle at 50% 200%, darkblue 0px 10px, skyblue 10px 20px);
+		}
+		to{
+		background-image: repeating-radial-gradient(circle at 50% -100%, darkblue 0px 10px, skyblue 10px 20px);
+		}
+	}
+
+	@keyframes bottom{
+		from{
+		background-image: repeating-radial-gradient(circle at 50% -100%, darkblue 0px 10px, skyblue 10px 20px);
+		}
+		to{
+		background-image: repeating-radial-gradient(circle at 50% 200%, darkblue 0px 10px, skyblue 10px 20px);
+		}
+	}
+
+</style></head><body>
+
+	<div class="pallete"><div class="layer c1"></div><div class="layer c2"></div><div class="layer c1"></div><div class="layer c2"></div><div class="layer c1"></div><div class="layer c2"></div><div class="layer c1"></div><div class="layer c2"></div><div class="layer c1"></div></div>
+
+</body></html>

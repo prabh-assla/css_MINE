@@ -1,0 +1,59 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>webpage!</title><style>
+
+.ball{
+  width: 50px;
+  height: 50px;
+  
+  border-radius: 50%;
+  
+  background: repeating-linear-gradient(red 0px 2px, green 2px 4px, blue 4px 6px, yellow 6px 8px) ;
+  border: 2px dotted yellow;
+  
+  animation: 9s ease-in-out infinite forwards motion;
+}
+
+.line{
+  width: 200px;
+  height: 10px;
+
+  border-radius: 5px;
+
+  position: relative;
+  left: 28px;
+
+  background: lime;
+}
+
+
+@keyframes motion{
+
+  from{
+    transform: translateX(0px);
+  }
+
+  20%{
+    transform: translateX(200px);
+  }
+
+  40%{
+    transform: translateX(200px) rotateY(180deg);
+  }
+
+  60%{
+    transform: translateX(0px) rotateY(180deg);
+  }
+
+  to{
+    transform: translateX(0px) rotateY(0deg);
+  }
+
+}
+
+</style></head><body>
+
+	<div class="ball"></div>
+  <div class="line"></div>
+
+</body></html>
+
+<!-- duration | easing-function | delay | iteration-count | direction | fill-mode | play-state | name -->
